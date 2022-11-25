@@ -3,6 +3,7 @@
     "",
     "\\directory",
     "\\directory\\directory",
+    "\\directory\\directory\\x64",
     "\\directory\\x64"
   ],
   "SelectedNode": "\\directory\\directory\\directory.cpp",

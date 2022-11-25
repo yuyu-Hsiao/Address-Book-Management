@@ -1,9 +1,10 @@
 #include<iostream>
 #include<string>
+#include"showMenu.h"
 #define MAX1 1000
 using namespace std;
 
-void showMenu();
+void showMenu02();
 void addperson(struct Addressbooks* abs);
 void showMenu(struct Addressbooks* abs);
 int isExist(Addressbooks* abs, string name);
@@ -44,7 +45,7 @@ int main()
 	int slect = 0;
 	while (true)
 	{
-		showMenu();
+		showMenu02();
 		cin >> slect;
 		switch (slect)
 		{
@@ -82,8 +83,9 @@ int main()
 	return 0;
 }
 
-//顯示功能
-void showMenu()
+
+
+void showMenu02()
 {
 	cout << "*************" << endl;
 	cout << "1.添加聯繫人" << endl;
@@ -95,8 +97,6 @@ void showMenu()
 	cout << "0.退出通訊錄" << endl;
 	cout << "*************" << endl;
 }
-
-
 
 //1.添加聯繫人
 void addperson(struct Addressbooks* abs)
